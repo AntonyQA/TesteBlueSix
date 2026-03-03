@@ -1,4 +1,4 @@
-class LoginPage {
+class Login {
   visitar() {
     cy.visit('https://front.serverest.dev/login');
   }
@@ -26,4 +26,4 @@ class LoginPage {
   }
 }
 
-export default new LoginPage();
+export default new Login();

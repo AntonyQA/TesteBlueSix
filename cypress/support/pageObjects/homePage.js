@@ -1,4 +1,4 @@
-class HomePage {
+class Home {
   pesquisarProduto(nomeDoProduto) {
     cy.get('[data-testid=pesquisar]').clear().type(nomeDoProduto);
   }
@@ -8,4 +8,4 @@ class HomePage {
   }
 }
 
-export default new HomePage();
+export default new Home();

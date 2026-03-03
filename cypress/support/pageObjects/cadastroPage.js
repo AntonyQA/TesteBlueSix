@@ -1,4 +1,4 @@
-class CadastroPage {
+class Cadastro {
   visitar() {
     cy.visit('https://front.serverest.dev/cadastrarusuarios');
   }
@@ -37,4 +37,4 @@ class CadastroPage {
   }
 }
 
-export default new CadastroPage();
+export default new Cadastro();

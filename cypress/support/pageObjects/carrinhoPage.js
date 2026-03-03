@@ -1,4 +1,4 @@
-class CarrinhoPage {
+class Carrinho {
  clicarNoPrimeiroProdutoDetalhes() {
   cy.get('[data-testid=product-detail-link]').should('be.visible').first().click();
 }
@@ -17,4 +17,4 @@ class CarrinhoPage {
   }
 }
 
-export default new CarrinhoPage();
+export default new Carrinho();

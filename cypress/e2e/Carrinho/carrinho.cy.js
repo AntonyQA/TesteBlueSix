@@ -1,5 +1,5 @@
 import loginPage from '../../support/pageObjects/loginPage';
-import carrinhoPage from '../../support/pageObjects/carrinhoPage';
+import carrinho from '../../support/pageObjects/carrinhoPage';
 
 describe('Carrinho de compras - fluxo completo', () => {
   const email = `user_${Date.now()}@test.com`;
@@ -19,9 +19,9 @@ describe('Carrinho de compras - fluxo completo', () => {
   it('Deve adicionar e limpar produto do carrinho com sucesso', () => {
     loginPage.visitar();
     loginPage.fazerLogin(email, senha);
-    carrinhoPage.clicarNoPrimeiroProdutoDetalhes();
-    carrinhoPage.adicionarProdutoNaLista();
-    carrinhoPage.limparListaDeCompra();
-    carrinhoPage.voltarParaPaginaInicial();
+    carrinho.clicarNoPrimeiroProdutoDetalhes();
+    carrinho.adicionarProdutoNaLista();
+    carrinho.limparListaDeCompra();
+    carrinho.voltarParaPaginaInicial();
   });
 });

@@ -1,5 +1,5 @@
-import loginPage from '../../support/pageObjects/loginPage';
-import homePage from '../../support/pageObjects/homePage';
+import login from '../../support/pageObjects/loginPage';
+import home from '../../support/pageObjects/homePage';
 
 describe('Pesquisa de produto', () => {
   const email = `user_${Date.now()}@test.com`;
@@ -17,11 +17,11 @@ describe('Pesquisa de produto', () => {
   });
 
   it('Deve exibir produto ao realizar pesquisa', () => {
-    loginPage.visitar();
-    loginPage.fazerLogin(email, senha);
+    login.visitar();
+    login.fazerLogin(email, senha);
 
     const nomeProduto = 'Mouse';
-    homePage.pesquisarProduto(nomeProduto);
-    homePage.verificarProdutoNaLista(nomeProduto);
+    home.pesquisarProduto(nomeProduto);
+    home.verificarProdutoNaLista(nomeProduto);
   });
 });
